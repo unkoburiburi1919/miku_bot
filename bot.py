@@ -1,6 +1,5 @@
 import os
 import random
-import tweepy
 
 words = ["ミク", "胸", "パッド"]
 
