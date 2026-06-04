@@ -3,7 +3,7 @@ import tweepy
 
 auth = tweepy.OAuth1UserHandler(
     os.environ["API_KEY"],
-    os.environ["API_KEY_SECRET"],
+    os.environ["API_SECRET"],
     os.environ["ACCESS_TOKEN"],
     os.environ["ACCESS_TOKEN_SECRET"]
 )
