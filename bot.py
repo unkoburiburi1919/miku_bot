@@ -1,21 +1,7 @@
-name: Daily Bot
+import random
 
-on:
-  workflow_dispatch:
+words = ["ミク", "胸", "パッド"]
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
+tweet = f"{random.choice(words)}の{random.choice(words)}は{random.choice(words)}入り"
 
-    steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-
-      - name: Install packages
-        run: pip install tweepy
-
-      - name: Run Bot
-        run: python bot.py
+print(tweet)
